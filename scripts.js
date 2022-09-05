@@ -1,5 +1,5 @@
 const testeRight = document.querySelector(".flip-face");
-const classesArr = ["plane","kurisu","margrit","hikaru","portal"];
+const classesArr = ["plane","kurisu","portrait","hikaru","laroca"];
 let position = 1;
 let turn = false;
 function toggleClass(){

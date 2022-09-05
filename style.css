@@ -15,7 +15,8 @@ header {
     justify-content: space-evenly;
 }
 
-.main-page>div {
+.main-page-right,
+.main-page-left {
     width: 600px;
     height: 600px;
     display: flex;
@@ -25,7 +26,9 @@ header {
     font-family: 'Press Start 2P';
     color: white;
     position: relative;
-}
+    margin-top: 9px;
+    font-size: 30px;
+}   
 
 .main-page-left h2 {
     font-size: 45px;
@@ -37,29 +40,19 @@ header {
     font-size: 30px;
 }
 
+.vertical-line{
+    width: 5px;
+    height: 80%;
+    background-color: red;
+    border-radius: 50%;
+    box-shadow: 0 0 1em rgba(0, 0, 0, .2);
+}
+
 .horizontal-line {
     width: 390px;
     height: 5px;
     background-color: red;
-}
-
-.main-page-rigth {
-    width: 100%;
-    height: 100%;
-    background-color: yellow;
-    position: absolute;
-    z-index: 2;
-}
-
-.face {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    transition: all;
-    transform-style: preserve-3d;
+    box-shadow: 0 0 1em rgba(0, 0, 0, .4);
 }
 
 .kurisu {
@@ -70,22 +63,16 @@ header {
     background-image: url("./images/glentgm-aviao-caindo-semcolab.gif");
 }
 
-.margrit {
-    background-image: url("./images/glentgm-margarita-the-animation5.gif");
+.portrait {
+    background-image: url("./images/glentgm-2.gif");
 }
 
 .hikaru {
     background-image: url("./images/glentgm-sprite-grande.jpg");
 }
 
-.portal {
-    background-image: url("./images/glentgm-testee.jpg");
-}
-
-.card {
-    width: 200px;
-    height: 250px;
-    position: relative;
+.laroca {
+    background-image: url("./images/glentgm-negocio.jpg");
 }
 
 .flip-face {
@@ -97,15 +84,13 @@ header {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
-}
-
-.flip-face.face {
     animation-name: rotator-back;
     animation-duration: 5s;
     animation-iteration-count: infinite;
     animation-fill-mode: forwards;
     animation-direction:alternate;
 }
+
 
 @keyframes rotator-back {
     to {

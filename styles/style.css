@@ -9,10 +9,13 @@ header {
 .main-page {
     width: 100%;
     height: 100vh;
-    background-color: lightgray;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    background-color: red;
+    animation-name: main-color-change;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
 }
 
 .main-page-right,
@@ -131,5 +134,11 @@ header {
 @keyframes animation-opacity {
     to {
         opacity: 100%;
+    }
+}
+
+@keyframes main-color-change {
+    to {
+        background-color: black;
     }
 }

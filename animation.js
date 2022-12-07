@@ -1,5 +1,9 @@
 const testeRight = document.querySelector(".flip-face");
 const classesArr = ["plane","kurisu","portrait","hikaru","laroca"];
+const discordInfo = document.querySelector(".glengm-discord");
+const glentgm = "Glentgm#6224";
+let animationGlent = [""];
+let count = glentgm.length - 1;
 let position = 1;
 let turn = false;
 function toggleClass(){
@@ -17,5 +21,20 @@ function toggleClass(){
     }
     turn = !turn;
 }
+function insertText(){
+    if(count < 0){
+        return
+    }
+    animationGlent.push(glentgm[count]);
+    count--;
+    const htmlArr = [""];
+    for(let i = animationGlent.length - 1; i > 0; i--){
+        htmlArr.push(animationGlent[i]);
+    }
+    console.log(htmlArr,animationGlent,count);
+    discordInfo.innerHTML = htmlArr.join('');
+}
 
 setTimeout(() => setInterval(toggleClass,5000), 2000);
+
+setTimeout(() => setInterval(insertText, 100), 2500);

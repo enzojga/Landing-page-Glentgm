@@ -3,7 +3,7 @@
 header {
     width: 100%;
     height: 80px;
-    background-color: red;
+    background-color:red;
 }
 
 .main-page {
@@ -12,7 +12,6 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    background-color: red;
     animation-name: main-color-change;
     animation-duration: 1s;
     animation-fill-mode: forwards;
@@ -56,7 +55,7 @@ header {
 .vertical-line{
     width: 5px;
     height: 0%;
-    background-color: red;
+    background-color: #2047f5;
     border-radius: 50%;
     box-shadow: 0 0 1em rgba(0, 0, 0, .2);
     animation-name: show-vertical-line;
@@ -67,7 +66,7 @@ header {
 .horizontal-line {
     width: 0;
     height: 5px;
-    background-color: red;
+    background-color: #2047f5;
     box-shadow: 0 0 1em rgba(0, 0, 0, .4);
     animation-name: show-horizontal-line;
     animation-delay: 1.1s;
@@ -112,6 +111,61 @@ header {
     animation-direction:alternate;
 }
 
+.icons {
+    margin-top: 30px;
+}
+
+.icons img {
+    width: 50px;
+    width: 50px;
+}
+
+.social-icons :nth-child(1) {
+    opacity: 0;
+    border-radius: 50%;
+    animation-name: animation-opacity;
+    animation-delay: 1.1s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.social-icons :nth-child(2) {
+    opacity: 0;
+    animation-name: animation-opacity;
+    animation-delay: 1.6s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.social-icons :nth-child(3) {
+    opacity: 0;
+    animation-name: animation-opacity;
+    animation-delay: 2.1s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+.discord-info img {
+    opacity: 0;
+    width: 50px;
+    width: 50px;
+    position: absolute;
+    left: 50px;
+    animation-name: teste;
+    animation-delay: 2.5s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.discord-info h3 {
+    color: white;
+    margin-top: 15px;
+}
+
+.discord-info {
+    margin-top: 15px;
+    margin-left: 50px;
+    position: relative;
+}
 
 @keyframes rotator-back {
     to {
@@ -140,5 +194,12 @@ header {
 @keyframes main-color-change {
     to {
         background-color: black;
+    }
+}
+
+@keyframes teste {
+    to {
+        left: -55px;
+        opacity: 100%;
     }
 }

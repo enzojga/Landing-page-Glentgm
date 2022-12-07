@@ -252,6 +252,7 @@ header {
     }
     
     .main-page-left p {
+        font-size: 28px;
         animation-delay: 1.5s;
     }
 

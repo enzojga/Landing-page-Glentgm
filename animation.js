@@ -2,6 +2,7 @@ const testeRight = document.querySelector(".flip-face");
 const classesArr = ["plane","kurisu","portrait","hikaru","laroca"];
 const discordInfo = document.querySelector(".glengm-discord");
 const glentgm = "Glentgm#6224";
+console.log();
 let animationGlent = [""];
 let count = glentgm.length - 1;
 let position = 1;
@@ -37,4 +38,8 @@ function insertText(){
 
 setTimeout(() => setInterval(toggleClass,5000), 2000);
 
-setTimeout(() => setInterval(insertText, 100), 2500);
+if(window.innerWidth > 614){
+    setTimeout(() => setInterval(insertText, 100), 2500);
+} else {
+    setTimeout(() => setInterval(insertText, 100), 3600);
+}
